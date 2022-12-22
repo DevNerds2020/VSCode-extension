@@ -16,7 +16,21 @@
 			"};\n",
 			"export default ${1:${TM_FILENAME/(.*)\\..+$/$1/}};\n"
 		],
-		"description": "put default code in your file"
-	}
-	
+		"description": "Log output to console"
+	},
+	"Custom React Architecture with Props": {
+		"scope": "javascript, typescript, typescriptreact",
+		"prefix": "crap",
+		"body": [
+			"import type { ReactElement } from 'react';\n",
+			"interface ${1:${TM_FILENAME/(.*)\\..+$/$1/}}Props {\n",
+			"  $2: $3;\n",
+			"}\n",
+			"const ${1:${TM_FILENAME/(.*)\\..+$/$1/}} = (props: ${1:${TM_FILENAME/(.*)\\..+$/$1/}}Props): ReactElement => {",
+			"  return <div>${1:${TM_FILENAME/(.*)\\..+$/$1/}}</div>;",
+			"};\n",
+			"export default ${1:${TM_FILENAME/(.*)\\..+$/$1/}};\n"
+		],
+		"description": "Log output to console"
+	},
 }
