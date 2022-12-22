@@ -33,5 +33,18 @@
       "export default ${1:${TM_FILENAME/(.*)\\..+$/$1/}};\n"
     ],
     "description": "this snippet is for custom react architecture with props"
+  },
+
+  "Material UI .style file": {
+    "scope": "javascript, typescript, typescriptreact",
+    "prefix": "mui",
+    "body": [
+      "import { makeStyles } from '@material-ui/core/styles';\n",
+      "const useStyles = makeStyles(theme => ({",
+      "  root: {$1},",
+      "}));",
+      "export default useStyles;\n"
+    ],
+    "description": "this snippet is for material ui .style file"
   }
 }
