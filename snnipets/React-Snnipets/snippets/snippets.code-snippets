@@ -16,7 +16,7 @@
 			"};\n",
 			"export default ${1:${TM_FILENAME/(.*)\\..+$/$1/}};\n"
 		],
-		"description": "Log output to console"
+		"description": "put default code in your file"
 	}
 	
 }
