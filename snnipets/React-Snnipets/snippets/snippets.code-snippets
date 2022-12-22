@@ -1,36 +1,37 @@
 {
-	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
-	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
-	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
-	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
-	// Placeholders with the same ids are connected.
-	// Example:
-	"Custom React Architecture": {
-		"scope": "javascript, typescript, typescriptreact",
-		"prefix": "cra",
-		"body": [
-            "import type { ReactElement } from 'react';\n",
-			"const ${1:${TM_FILENAME/(.*)\\..+$/$1/}} = (): ReactElement => {",
-			"  return <div>${1:${TM_FILENAME/(.*)\\..+$/$1/}}</div>;",
-			"};\n",
-			"export default ${1:${TM_FILENAME/(.*)\\..+$/$1/}};\n"
-		],
-		"description": "Log output to console"
-	},
-	"Custom React Architecture with Props": {
-		"scope": "javascript, typescript, typescriptreact",
-		"prefix": "crap",
-		"body": [
-			"import type { ReactElement } from 'react';\n",
-			"interface ${1:${TM_FILENAME/(.*)\\..+$/$1/}}Props {\n",
-			"  $2: $3;\n",
-			"}\n",
-			"const ${1:${TM_FILENAME/(.*)\\..+$/$1/}} = (props: ${1:${TM_FILENAME/(.*)\\..+$/$1/}}Props): ReactElement => {",
-			"  return <div>${1:${TM_FILENAME/(.*)\\..+$/$1/}}</div>;",
-			"};\n",
-			"export default ${1:${TM_FILENAME/(.*)\\..+$/$1/}};\n"
-		],
-		"description": "Log output to console"
-	},
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+  // Placeholders with the same ids are connected.
+  // Example:
+  "Custom React Architecture": {
+    "scope": "javascript, typescript, typescriptreact",
+    "prefix": "cra",
+    "body": [
+      "import type { ReactElement } from 'react';\n",
+      "const ${1:${TM_FILENAME/(.*)\\..+$/$1/}} = (): ReactElement => {",
+      "  return <div>${1:${TM_FILENAME/(.*)\\..+$/$1/}}</div>;",
+      "};\n",
+      "export default ${1:${TM_FILENAME/(.*)\\..+$/$1/}};\n"
+    ],
+    "description": "this snippet is for custom react architecture"
+  },
+
+  "Custom React Architecture with Props": {
+    "scope": "javascript, typescript, typescriptreact",
+    "prefix": "crap",
+    "body": [
+      "import type { ReactElement } from 'react';\n",
+      "interface ${1:${TM_FILENAME/(.*)\\..+$/$1/}}Props {\n",
+      "  $2: $3;\n",
+      "}\n",
+      "const ${1:${TM_FILENAME/(.*)\\..+$/$1/}} = (props: ${1:${TM_FILENAME/(.*)\\..+$/$1/}}Props): ReactElement => {",
+      "  return <div>${1:${TM_FILENAME/(.*)\\..+$/$1/}}</div>;",
+      "};\n",
+      "export default ${1:${TM_FILENAME/(.*)\\..+$/$1/}};\n"
+    ],
+    "description": "this snippet is for custom react architecture with props"
+  }
 }
